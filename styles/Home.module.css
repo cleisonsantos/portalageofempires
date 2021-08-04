@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .main {
@@ -113,6 +113,21 @@
   margin-left: 0.5rem;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar li a{
+  padding: 10px;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
