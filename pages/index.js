@@ -17,22 +17,22 @@ export default function Home() {
 
         <ul>
           <li>
-            <a>
+            <a href="#">
                 Civilizações
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
                 Unidades
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
                 Notícias
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
                 Sobre
             </a>
           </li>

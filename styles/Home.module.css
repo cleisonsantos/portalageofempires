@@ -126,8 +126,16 @@
 }
 
 .navbar li a{
-  padding: 10px;
+  padding: 5px 10px;
+  transition: all ease-in .1s;
 }
+
+.navbar li a:hover{
+  color: brown;
+  border-bottom: 1px solid brown;
+  border-bottom-width: 4px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
