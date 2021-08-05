@@ -1,20 +1,75 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
+  background: url('../public/header_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-attachment: fixed;
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 0rem 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 80%;
+  /* justify-content: start; */
+  /* align-items: center; */
+  background-color: #362a0890;
+  margin-top: 0px;
+}
+
+.navbar{
+  width: 100%;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+  height: 128px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.navbar nav{
+  
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar li {
+  padding: 5px 10px;
+  transition: all ease-in .1s;
+  font-weight: bold;
+}
+
+.navbar li a{
+  padding: 5px 10px;
+  transition: all ease-in .1s;
+  font-weight: bold;
+}
+
+.navbar li a:hover{
+  color: brown;
+  border-bottom: 1px solid brown;
+  border-bottom-width: 4px;
+}
+
+.banner {
+  height: 90vh;
+  /* background: url('../public/header_bg.jpg'); */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  
 }
 
 .footer {
@@ -24,6 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #eaeaea;
 }
 
 .footer a {
@@ -87,14 +143,16 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: 30rem;
+  height: 20rem;
+  background: #eaeaea;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: brown;
+  border-color: #4b1a1a;
 }
 
 .card h2 {
@@ -109,31 +167,7 @@
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-.navbar ul li{
-  list-style: none;
-  display: inline-block;
-}
-
-.navbar li a{
-  padding: 5px 10px;
-  transition: all ease-in .1s;
-}
-
-.navbar li a:hover{
-  color: brown;
-  border-bottom: 1px solid brown;
-  border-bottom-width: 4px;
+  height: .5em;
 }
 
 @media (max-width: 600px) {
