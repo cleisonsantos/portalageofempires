@@ -40,10 +40,12 @@ const Header = () => {
                                     return (
                                         <li key={i}>
                                             <Link href='/civis' >
-                                                <div>
-                                                <Image height={10} width={10} src={civ.foto_escudo || 'favicon.ico'} />
+                                                {/* <div> */}
+                                                <>
+                                                <Image height={10} width={10} src={civ.url_icone || 'favicon.ico'} />
                                                 {civ.name}
-                                                </div>
+                                                </>
+                                                {/* </div> */}
                                             </Link>
                                         </li>
                                     )
