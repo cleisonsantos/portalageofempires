@@ -23,13 +23,15 @@
     transition: all ease-in-out .25s;
     visibility: hidden;
     position: absolute;
-    margin-top: 10px;
-    padding: 10px 10px 10px 0;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
     width: fit-content;
     height: fit-content;
     background-color: white;
     border: 1px solid brown;
     opacity: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar ul li div ul {
@@ -39,7 +41,24 @@
     margin: 0;
 }
 
-.navbar ul li div ul li a {}
+.navbar ul li div ul li a {
+    display: flex;
+    align-items: center;
+    border: 0px;
+    justify-content: flex-start;
+
+}
+
+.navbar ul li div ul li a div {
+    border: 0px;
+}
+
+.navbar ul li div ul li a:hover {
+    display: flex;
+    align-items: center;
+    border: 0px;
+}
+
 
 .navbar li {
     padding: 5px 10px;
