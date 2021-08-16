@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../../styles/Header.module.css'
-import logo from '../../public/logo.svg'
+import styles from '../../../styles/Header.module.css'
+import logo from '../../../public/logo.svg'
 
 const Header = () => {
 
@@ -39,13 +39,13 @@ const Header = () => {
                                     civis.map((civ, i) => {
                                         return (
                                             <li key={i}>
-                                                <Link href='/civis' passHref >
-                                                    <Link href={`/civis/${civ.name}`} passHref >
-                                                        <a href="">
-                                                            <Image height={10} width={10} src={civ.url_icone} alt='' />
-                                                            {civ.name_pt_br}
-                                                        </a>
-                                                    </Link>
+                                                <Link href={`/civis/${civ.id}`} passHref >
+                                                    <a href="">
+                                                        {civ.url_icone && (
+                                                            <Image height={20} width={20} src={civ.url_icone} alt='' />
+                                                        )}
+                                                        {civ.name}
+                                                    </a>
                                                 </Link>
                                             </li>
                                         )
